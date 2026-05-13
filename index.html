@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>她与她之间</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+  <!-- 背景层 -->
+  <div class="bg"></div>
+  <div class="noise"></div>
+
+  <!-- 首页 -->
+  <div id="home" class="page active">
+    <div class="quote" id="quote"></div>
+
+    <div class="subtitle">
+      36 questions about girls you never admitted you liked.
+    </div>
+
+    <button onclick="startQuiz()">开始测试</button>
+  </div>
+
+  <!-- 测试页 -->
+  <div id="quiz" class="page">
+    <div class="progress" id="progress">1 / 36</div>
+
+    <div class="question" id="question"></div>
+
+    <div class="options" id="options"></div>
+  </div>
+
+  <!-- 结果页 -->
+  <div id="result" class="page">
+    <div class="title" id="resultTitle"></div>
+    <div class="desc" id="resultDesc"></div>
+
+    <div class="quoteBox" id="resultQuote"></div>
+
+    <button onclick="restart()">重新测试</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
